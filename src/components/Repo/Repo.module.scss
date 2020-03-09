@@ -1,0 +1,90 @@
+@import'../../assets/Colors.scss';
+
+.main{
+
+    height: 100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: scroll;
+
+    .title{
+
+        font-size: 1.5rem;
+        color:$text;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .list{
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-top: 20px;
+
+        .listItem{
+
+            height: 15vh;
+            width: 90%;
+            border-radius: 25px;
+            box-shadow: -5px -5px 10px #ffffff74, 5px 5px 10px rgba($color: #111111, $alpha: 0.2);
+            color:$text;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+
+            .itemSection{
+
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row;
+                padding: 0px 25px;
+                box-sizing: border-box;
+
+                h4{
+
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    margin: 0;
+    
+                }
+                
+                h3{
+    
+                    font-size: 1rem;
+                    font-weight: 600;
+                    margin: 0;
+    
+                }
+
+            }
+
+        }
+
+    }
+}
+
+@media only screen and (min-width: 1000px){
+
+    .main{
+
+        height: 100%;
+        width: 35%;
+        
+    }
+
+}

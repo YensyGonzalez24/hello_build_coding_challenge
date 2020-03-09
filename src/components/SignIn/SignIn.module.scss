@@ -1,0 +1,90 @@
+@import'../../assets/Colors.scss';
+
+.main{
+
+    height: 100vh;
+    width: 100vw;
+    background: #dde1e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .panel{
+
+        height: 70vh;
+        width: 90vw;
+        border-radius: 25px;
+        box-shadow: -5px -5px 10px #ffffff74, 5px 5px 10px rgba($color: #111111, $alpha: 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        h2{
+
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #2B303A;
+            margin: 0;
+
+        }
+
+        .container{
+
+            height: 130px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+
+        }
+
+        .link{
+
+            font-size: 0.8rem;
+            font-weight: 300;
+
+            .subLink{
+
+                font-weight: 600;
+                color:$text;
+                text-decoration: none;
+
+                &:hover{
+
+                    cursor: pointer;
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 1000px){
+
+    .main{
+    
+        .panel{
+    
+            height: 70vh;
+            width: 30vw;
+            max-height: 600px;
+            max-width: 450px;
+    
+            .container{
+
+                height: 30%;
+                width: 100%;
+    
+            }
+
+        }
+    
+    }
+
+}

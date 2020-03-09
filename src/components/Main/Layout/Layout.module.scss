@@ -1,0 +1,27 @@
+.main{
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    .subMain{
+
+        flex-grow: 1;
+        width: 100vw;
+
+    }
+}
+
+@media only screen and (min-width: 1000px){
+
+    .main{
+
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+}

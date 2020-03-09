@@ -1,0 +1,51 @@
+.main{
+
+    height: 70px;
+    width: 90%;
+    background: #dde1e7;
+    color: #2B303A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+
+    .label{
+
+        font-size: 1rem;
+        font-weight: 500;
+
+    }
+
+}
+
+.active{
+
+    box-shadow: -3px -3px 10px #ffffff74, 3px 3px 10px rgba($color: #111111, $alpha: 0.2), inset 2px 2px 10px rgba($color: #ffffff, $alpha: 0.8), inset -2px -2px 10px rgba($color: #111111, $alpha: 0.2);
+
+    &:hover{
+
+        box-shadow: inset -2px -2px 10px rgba($color: #ffffff, $alpha: 0.8), inset 2px 2px 10px rgba($color: #111111, $alpha: 0.2);
+        cursor: pointer;
+
+        .label{
+
+            display: inline-block;
+            transform: scale(0.98);
+
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 1000px){
+
+    .main{
+
+        height: 60px;
+        width: 80%;
+    
+    }
+
+}

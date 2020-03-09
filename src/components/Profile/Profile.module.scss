@@ -1,0 +1,86 @@
+@import'../../assets/Colors.scss';
+
+.main{
+
+    height: 100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .title{
+
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-bottom: 30px;
+        color: $text;
+
+    }
+
+    .picContainer{
+
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span{
+
+            height: 20vh;
+            width:20vh;
+            background: $text;
+            border-radius: 50%;
+
+        }
+    }
+
+    .infoContainer{
+
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        .info{
+
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: $text;
+            width: 100%;
+            text-align: center;
+            margin: 20px 0px;
+
+        }
+
+    }
+
+    .logOutContainer{
+
+        height: 15vh;
+        width: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+}
+
+@media only screen and (min-width: 1000px){
+
+    .main{
+
+        height: 100%;
+        width: 30%;
+        
+    }
+
+}
